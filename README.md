@@ -9,11 +9,13 @@
 ![alt text](version.PNG)
 - Nginx 이미지로 컨테이너 실행
 
-	// docker image pull nginx
+	`// docker image pull nginx`
 
-	// docker container run -d -p 12345:80 nginx
+	`// docker container run -d -p 12345:80 nginx`
 
-- docker container ls // 컨테이너 상태 확인
+- docker container ls 
+
+	`// 컨테이너 상태 확인`
 ![alt text](12345.PNG)
 
 - mkdir /home/sp~/workspace_docker/www/ 
@@ -21,7 +23,8 @@
 - host pc 웹 페이지 저장 디렉토리 
 <-> Nginx 디렉토리 
 
-	// docker container run -v $PWD:/usr/share/nginx/html -d -p 54323:80 nginx
+	`// docker container run -v $PWD:/usr/share/nginx/html -d -p 54323:80 nginx`
+
 	![alt text](54323.PNG)
 
 ### 2. <.html> 코드 작성
@@ -39,7 +42,7 @@
 ![alt text](c3.PNG)
 
 #### 프로그래밍 문제 시각화 html
-- C 
+- `C` 
 #### - c_easy
 ![alt text](c_e.PNG)
 #### - c_normal
@@ -48,7 +51,7 @@
 ![alt text](c_h1.PNG)
 ![alt text](c_h2.PNG)
 
-- JAVA 
+- `JAVA` 
 #### - java_easy
 ![alt text](j_e.PNG)
 #### - java_normal
@@ -58,7 +61,7 @@
 ![alt text](j_h2.PNG)
 ![alt text](j_h3.PNG)
 
-- PYTHON 
+- `PYTHON` 
 #### - python_easy
 ![alt text](p_e.PNG)
 #### - python_normal
@@ -95,11 +98,13 @@
 #### - 프라이빗 키 설정
 - .pem -> .ppk 
 	
-	//puttygen 이용
+	`//puttygen 이용`
 #### - 패키지 설치
 - gcc
-- //  apt-get update
-- // apt-get install gcc
+
+	`//  apt-get update`
+
+	`// apt-get install gcc`
 
 ***
 ### 3. 코딩 테스트 정답 확인 프로그램 구현
@@ -276,17 +281,15 @@ while(1) {
         }
 }
 }
-
-
 ```
 
 #### - 컴파일
 
-	/// gcc -o cloud_p cloud_p.c
+	 gcc -o cloud_p cloud_p.c
 
 #### - 파일 실행
 
-	/// ./cloud_p
+	 ./cloud_p
 
 #### - 실행 result
 ` -> 걸린시간 , 정답 / 오답 출력`
