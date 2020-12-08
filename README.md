@@ -335,8 +335,8 @@ while(1) {
 	 ./cloud_p
 
 #### - 실행 result
-` -> 걸린시간 , 정답 / 오답 출력`
+`-> 걸린시간 , 정답 / 오답 출력`
 
-![alt text](result.png)
+![alt text](result.PNG)
 
 
