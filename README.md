@@ -133,7 +133,7 @@
 ### [AWS EC2] - 코딩 테스트 정답 확인 프로그램 구현
 ### 1. AWS 인스턴스 생성
 
-![alt text](instance.png)
+![alt text](instance.PNG)
 
 ***
 ### 2. putty -> SSH연결
@@ -336,7 +336,8 @@ while(1) {
 
 #### - 실행 result
 `-> 걸린시간 , 정답 / 오답 출력`
-
 ![alt text](result.PNG)
+
+***
 
 
