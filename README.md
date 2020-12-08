@@ -1,6 +1,91 @@
 # CloudComputing Project
 
-## 목표 : AWS를 이용하여 우분투 가상머신 생성 후, 코딩테스트 프로그램 구현 
+## 목표 : AWS Ec2와 Ubuntu 가상서버를 이용하여 코딩테스트 프로그램 & 웹 구현 
+### [Ubuntu 가상서버] - 코딩 테스트 웹 구현
+### 1. docker 설치 & 컨테이너 구동
+- sudo su - // root로 이동 ( docker는 root권한이 있어야 실행 O )
+- curl -fsSL https://get.docker.com/ | sudo sh
+- docker version // 설치 여부 확인
+![alt text](version.PNG)
+- Nginx 이미지로 컨테이너 실행
+
+	// docker image pull nginx
+
+	// docker container run -d -p 12345:80 nginx
+
+- docker container ls // 컨테이너 상태 확인
+![alt text](12345.PNG)
+
+- mkdir /home/sp~/workspace_docker/www/ 
+- index.html 작성
+- host pc 웹 페이지 저장 디렉토리 
+<-> Nginx 디렉토리 
+
+	// docker container run -v $PWD:/usr/share/nginx/html -d -p 54323:80 nginx
+	![alt text](54323.PNG)
+
+### 2. <.html> 코드 작성
+#### 웹 구현 html
+- index.html
+![alt text](index.PNG)
+- about.html
+![alt text](a.PNG)
+- how.html
+![alt text](h1.PNG)
+![alt text](h2.PNG)
+- code.html
+![alt text](c1.PNG)
+![alt text](c2.PNG)
+![alt text](c3.PNG)
+
+#### 프로그래밍 문제 시각화 html
+- C 
+#### - c_easy
+![alt text](c_e.PNG)
+#### - c_normal
+![alt text](c_n.PNG)
+#### - c_hard
+![alt text](c_h1.PNG)
+![alt text](c_h2.PNG)
+
+- JAVA 
+#### - java_easy
+![alt text](j_e.PNG)
+#### - java_normal
+![alt text](j_n.PNG)
+#### - java_hard
+![alt text](j_h1.PNG)
+![alt text](j_h2.PNG)
+![alt text](j_h3.PNG)
+
+- PYTHON 
+#### - python_easy
+![alt text](p_e.PNG)
+#### - python_normal
+![alt text](p_n.PNG)
+#### - python_hard
+![alt text](p_h.PNG)
+
+### 3. 웹 구현 결과물 
+#### PC
+![alt text](home.PNG)
+![alt text](about.PNG)
+![alt text](how.PNG)
+![alt text](code.PNG)
+- easy -> 문제 초록색 표시
+![alt text](easy.PNG)
+- normal -> 문제 파란색 표시
+![alt text](normal.PNG)
+- hard -> 문제 빨간색 표시
+![alt text](hard.PNG)
+#### Phone 
+![alt text](ph1.jpg)
+![alt text](ph2.PNG)
+![alt text](ph3.PNG)
+![alt text](ph4.PNG)
+
+
+### [AWS EC2] - 코딩 테스트 정답 확인 프로그램 구현
 ### 1. AWS 인스턴스 생성
 #### - http포트 규칙 추가
 
@@ -11,16 +96,11 @@
 ### 2. putty -> SSH연결
 #### - 패키지 설치
 - gcc
+- //  apt-get update
+- // apt-get install gcc
 
 ***
-### 3. 코딩 문제들을 담을 txt파일 생성
-#### - `c.txt`
-![example_1](c_easy_txt.PNG)
-![example_2](c_easy_txt_2.PNG)
-
-
-***
-### 4. 코딩 테스트 프로그램 구현
+### 3. 코딩 테스트 정답 확인 프로그램 구현
 #### - cloud.c
 #### `code`
 ```c
