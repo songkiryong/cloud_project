@@ -1,7 +1,7 @@
 # CloudComputing Project
 
 ## 목표 : AWS Ec2와 Ubuntu 가상서버를 이용하여 코딩테스트 프로그램 & 웹 구현 
-***
+
 ### [Ubuntu 가상서버] - 코딩 테스트 웹 구현
 ### 1. docker 설치 & 컨테이너 구동
 - sudo su - 
